@@ -42,12 +42,12 @@ Routes definition
                 router.post('/:endpoint', (req, res) => {
                     // Set MySQL connection
                     const connection = mysql.createConnection({
-                        host     : 'localhost',
-                        port     :  8889,
-                        user     : 'root',
-                        password : 'root',
-                        database : 'api-node'
-                    })
+                        host : process.env.MYSQL_HOST,
+                        port : process.env.MYSQL_PORT,
+                        user : process.env.MYSQL_USER,
+                        password : process.env.MYSQL_PASS,
+                        database : process.env.MYSQL_DB
+                        })
                     
                     // Connect the DB
                     connection.connect( (connectionError) => {
@@ -77,12 +77,12 @@ Routes definition
                 router.get('/:endpoint', (req, res) => {
                     // Set MySQL connection
                     const connection = mysql.createConnection({
-                        host     : 'localhost',
-                        port     :  8889,
-                        user     : 'root',
-                        password : 'root',
-                        database : 'api-node'
-                    })
+                        host : process.env.MYSQL_HOST,
+                        port : process.env.MYSQL_PORT,
+                        user : process.env.MYSQL_USER,
+                        password : process.env.MYSQL_PASS,
+                        database : process.env.MYSQL_DB
+                        })
                     
                     // Connect the DB
                     connection.connect( (connectionError) => {
@@ -110,12 +110,12 @@ Routes definition
                 router.get('/:endpoint/:id', (req, res) => {
                     // Set MySQL connection
                     const connection = mysql.createConnection({
-                        host     : 'localhost',
-                        port     :  8889,
-                        user     : 'root',
-                        password : 'root',
-                        database : 'api-node'
-                    })
+                        host : process.env.MYSQL_HOST,
+                        port : process.env.MYSQL_PORT,
+                        user : process.env.MYSQL_USER,
+                        password : process.env.MYSQL_PASS,
+                        database : process.env.MYSQL_DB
+                        })
                     
                     // Connect the DB
                     connection.connect( (connectionError) => {
@@ -143,12 +143,12 @@ Routes definition
                 router.put('/:endpoint/:id', (req, res) => {
                     // Set MySQL connection
                     const connection = mysql.createConnection({
-                        host     : 'localhost',
-                        port     :  8889,
-                        user     : 'root',
-                        password : 'root',
-                        database : 'api-node'
-                    })
+                        host : process.env.MYSQL_HOST,
+                        port : process.env.MYSQL_PORT,
+                        user : process.env.MYSQL_USER,
+                        password : process.env.MYSQL_PASS,
+                        database : process.env.MYSQL_DB
+                        })
                     
                     // Connect the DB
                     connection.connect( (connectionError) => {
@@ -180,12 +180,12 @@ Routes definition
                 router.delete('/:endpoint/:id', (req, res) => {
                     // Set MySQL connection
                     const connection = mysql.createConnection({
-                        host     : 'localhost',
-                        port     :  8889,
-                        user     : 'root',
-                        password : 'root',
-                        database : 'api-node'
-                    })
+                        host : process.env.MYSQL_HOST,
+                        port : process.env.MYSQL_PORT,
+                        user : process.env.MYSQL_USER,
+                        password : process.env.MYSQL_PASS,
+                        database : process.env.MYSQL_DB
+                        })
                     
                     // Connect the DB
                     connection.connect( (connectionError) => {
